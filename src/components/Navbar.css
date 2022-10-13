@@ -1,0 +1,21 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.leftnav > h1 >em {
+     color: red;
+}
+.rightnav{
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+}
+.navlinks{
+    display: flex;
+    column-gap: 50px;
+}
+.navlinks>h2{
+    font-weight: 350;
+}
