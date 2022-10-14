@@ -9,7 +9,7 @@ function Singup({ onLogin }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("signup", {
+    fetch("http://127.0.0.1:3000/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -60,6 +60,9 @@ function Singup({ onLogin }) {
           />
         </form>
       </div>
+      <span>
+        hava an account? please <a href="/login">login</a>
+      </span>
     </div>
   );
 }
