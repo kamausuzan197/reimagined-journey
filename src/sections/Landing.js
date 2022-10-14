@@ -16,6 +16,9 @@ function Landing() {
   const handleDelete = () => {
     window.location.href = "/delete";
   };
+  const handleCreateReview =  () =>{
+    window.location.href = '/new/review'
+  }
   return (
     <div>
       <Navbar />
@@ -46,6 +49,15 @@ function Landing() {
                 name="Delete Order"
                 bgColor="white"
                 color="black"
+                padding="8px"
+                radius="10px"
+                fontSize="26px"
+              />
+               <Button
+                onClick={handleCreateReview}
+                name="Create review"
+                bgColor="blue"
+                color="white"
                 padding="8px"
                 radius="10px"
                 fontSize="26px"
