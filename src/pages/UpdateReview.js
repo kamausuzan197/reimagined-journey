@@ -10,8 +10,8 @@ function UpdateReview({ orderID, userID }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:9292/reviews", {
-      method: "POST",
+    fetch(`http://localhost:3000/reviews/${laundryID}`, {
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
@@ -25,11 +25,11 @@ function UpdateReview({ orderID, userID }) {
       .then((res) => res.json())
       .then((newReview) => console.log(newReview));
     window.location.href = "/success"
-  }
+   }
   return (
     <div className="form">
       <div className="form__container">
-        <h1>ReviewForm</h1>
+        <h1>UpdateForm</h1>
         <form>
           <input
             label="orderNumber"
