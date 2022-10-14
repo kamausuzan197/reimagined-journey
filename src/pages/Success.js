@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 function Success() {
     const routeChange = () => {
-        let path = "/";
+        let path = "/home";
         window.location.href = path;
     }
     return (
