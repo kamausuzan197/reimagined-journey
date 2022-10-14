@@ -10,7 +10,7 @@ function OderForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:9292/laundry", {
+    fetch("http://localhost:3000/laundries", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -23,7 +23,7 @@ function OderForm() {
     })
       .then((res) => res.json())
       .then((newOrder) => UpdateReview(newOrder.id));
-    window.location.href = '/user'
+    window.location.href = '/success'
   }
 
   return (
