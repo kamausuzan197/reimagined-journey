@@ -10,6 +10,7 @@ import Features from "./sections/Features";
 import Footer from "./components/Footer";
 import DeleteForm from "./pages/DeleteForm";
 import Singup from "./pages/Signup";
+import Login from "./pages/Login";
 
 
 
@@ -20,12 +21,13 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Singup />} />
+                <Route path="/login" element={<Login />} />
                 <Route path="/home" element={<Landing />} />
                 <Route path="/home" element={<Features />} />
                 <Route path="/order" element={<OderForm />} />
                 <Route path="/review" element={<UpdateReview />} />
                 <Route path='/delete' element={<DeleteForm />} />
-                <Route path="/user" element={<UserForm />} />
+                <Route path="/new/review" element={<UserForm />} />
                 <Route path="/success" element={<Success />} />
             </Routes>
         </BrowserRouter>
