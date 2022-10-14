@@ -4,17 +4,18 @@ import Button from "../components/Button";
 function DeleteForm() {
   const [id, setID] = useState(0);
   function handleDeleteClick() {
-    fetch(`http://localhost:9292/reviews/${id}`, {
+    fetch(`http://localhost:3000/reviews/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
       .then((deletedReview) => console.log(deletedReview));
+      window.location.href = '/home'
   }
   return (
     <div className="form">
       <div className="form__container">
         <h1>Delete order</h1>
-        <form action="/">
+        <form >
           <input
             label="id"
             name="id"
